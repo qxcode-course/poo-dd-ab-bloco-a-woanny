@@ -1,0 +1,7 @@
+2025-09-19 15:24:26, MOVE, v:1, k:toalha, mode:PICK
+2025-09-19 15:24:59, EXEC, v:1, k:toalha, mode:LOCK, rate:100, size:6
+2025-09-19 15:25:07, EXEC, v:1, k:toalha, mode:LOCK, rate:100
+2025-09-19 15:25:21, EXEC, v:1, k:toalha, mode:FREE
+2025-09-19 15:25:49, EXEC, v:1, k:toalha, mode:FREE
+2025-09-19 15:26:03, MOVE, v:1, k:toalha, mode:BACK
+2025-09-19 15:31:45, SELF, v:1, k:toalha, rate:20, guide:achei_uma_video_aula_com_outro_exemplo_mas_que_explicava_bem_o_assunto, alone:1, study:150

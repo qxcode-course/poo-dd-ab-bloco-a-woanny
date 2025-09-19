@@ -1,10 +1,11 @@
 class Towel:
-    def __init__(self, color: str, size: str):
-        self.color: str = color
-        self.size: str = size
-        self.wetness: int = 0
+    def __init__(self, color, size, wetness):
+        
+        self.color = color
+        self.size = size # P M G
+        self.wetness: int = 0 # max umidade: P -> 10 M -> 20 G -> 30
 
-    def __str__(self) -> str:
-        return f'Cor:{self.color}'
-
-branca = Towel ('white', 'G')
+toalha = Towel ("azul", "M", 40)
+print(toalha.color)
+print(toalha.size)
+print(toalha.wetness)
