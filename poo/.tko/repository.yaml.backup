@@ -5,16 +5,12 @@ filter:
 - BLOCO_B
 version: 0.0.1
 database: database
-expanded:
-- campanha-principal
-- bloco_b-primeiras-classes
-tasks:
-  toalha: '{rate:20, guide:achei_uma_video_aula_com_outro_exemplo_mas_que_explicava_bem_o_assunto,
-    alone:1, study:150}'
+expanded: []
+tasks: {}
 flags:
-  quests: 0
+  quests: 1
   tracks: 1
   tasks: 0
-  graph: 1
+  graph: 0
   xray: 0
 index: toalha
