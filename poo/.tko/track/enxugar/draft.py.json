@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-22_17-56-13",
+            "content": "@@ -985,19 +985,11 @@\n     \n-    if args\n+if \n %5B0%5D \n@@ -998,20 +998,16 @@\n  'end':%0A\n-    \n         \n@@ -1012,20 +1012,16 @@\n   break%0A\n-    \n     elif\n@@ -1013,36 +1013,32 @@\n  break%0A    elif \n-args\n %5B0%5D == 'criar':%0A\n@@ -1035,29 +1035,25 @@\n  'criar'\n-:%0A   \n+%0A\n         \n  color =\n@@ -1048,359 +1048,19 @@\n     \n- color = args%5B1%5D%0A            size = args %5B2%5D%0A            toalha = Towel(color, size)%0A        elif args%5B0%5D == 'mostrar':%0A            print(toalha)%0A        elif args%5B0%5D == 'enxugar':%0A            amount = int(args%5B1%5D)%0A            toalha.dry(amount)%0A        elif args%5B0%5D == 'seca':%0A            print('sim' if toalha.wetness else 'nao') %0A        else:%0A    \n+%0A    else:%0A\n     \n@@ -1100,14 +1100,8 @@\n cido.')%0A\n-main()\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-09-22_18-09-43",
+            "content": "class Towel:\n    def __init__(self, color: str, size: str):\n        \n        self.color: str = color\n        self.size: str = size # P M G\n        self.wetness: int = 0 # max umidade: P -> 10 M -> 20 G -> 30\n\n    def dry (self, amount: int): #quantidade de umidade recebido\n\n        self.wetness += amount # deveria aumentar a umidade\n        \n        if self.wetness > self.getMaxWetness():\n            print('Toalha encharcada.')\n            self.wetness = self.getMaxWetness()\n\n    def wringOut (self): # torce a toalha\n        self.wetness = 0\n\n    def getMaxWetness(self): # umidade m\u00e1xima por tamanho\n        if self.size == 'P':\n            return 10\n        elif self.size == 'M':\n            return 20\n        elif self.size == 'G':\n            return 30\n        return 0 # pra dizer quando nenhuma das op\u00e7\u00f5es for v\u00e1lida\n\ndef main():\n    toalha = Towel('', '') \n    while True:\n        print('$', end='')\n        line: str = input()\n        args: list[str] = line.split('')\n\n        if args[0] == 'end':\n            break\n        elif args[0] == 'criar':\n            color = args[1]\n            size = args [2]\n            toalha = Towel(color, size)\n        elif args[0] == 'mostrar':\n            print(toalha)\n        elif args[0] == 'enxugar':\n            amount = int(args[1])\n            toalha.dry(amount)\n        elif args[0] == 'seca':\n            print('sim' if toalha.wetness else 'nao') \n        else:\n            print('fail: comando desconhecido.')\nmain()",
+            "lines": "50"
+        }
+    ]
+}
