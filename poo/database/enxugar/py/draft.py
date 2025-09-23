@@ -23,7 +23,8 @@ class Towel:
             return 20
         elif self.size == 'G':
             return 30
-        return 0 # pra dizer quando nenhuma das opções for válida
+        else:
+            return 0 # pra dizer quando nenhuma das opções for válida
 
 def main():
     toalha = Towel('', '') 

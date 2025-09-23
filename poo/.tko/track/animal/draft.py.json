@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-23_18-12-47",
+            "content": "@@ -679,32 +679,33 @@\n        elif args\n+ \n %5B0%5D == 'init':%0A \n@@ -703,16 +703,16 @@\n 'init':%0A\n-\n         \n@@ -757,16 +757,17 @@\n d = args\n+ \n %5B2%5D%0A    \n@@ -835,24 +835,24 @@\n  == 'show':%0A\n+\n             \n@@ -862,150 +862,8 @@\n nt()\n-%0A        elif args%5B0%5D == 'noise':%0A            print(animal.makeSound)%0A        elif args%5B0%5D == 'grow':%0A            print(animal.ageBy)%0A        \n %0A%0Ama\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-09-23_18-27-51",
+            "content": "class Animal:\n    def __init__(self, species: str, sound: str):\n\n        self.species: str = species\n        self.sound: str = sound\n        self.age: int = 0\n\n    def ageBy (self, increment: int):\n\n        self.age += increment\n\n        if self.age > 4:\n            print()\n            self.age = 4\n\n    def makeSound (self):\n\n        if self.age == 0:\n            print('---')\n        elif self.age == 4:\n            print('RIP')\n        else:\n            print(self.sound)\n\ndef main():\n    animal = Animal('', '')\n    while True:\n        print('$', end='')\n        line: str = input()\n        args: list[str] = line.split('')\n\n        if args[0] == 'end':\n            break\n        elif args[0] == 'init':\n            species = args[1]\n            sound = args[2]\n            animal = Animal(species, sound)\n        elif args [0] == 'show':\n            print()\n        elif args[0] == 'noise':\n            print(animal.makeSound)\n        elif args[0] == 'grow':\n            print(animal.ageBy)\n        \n\nmain()",
+            "lines": "46"
+        }
+    ]
+}
