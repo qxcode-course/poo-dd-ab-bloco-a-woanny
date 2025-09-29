@@ -12,8 +12,8 @@ class Animal:
 
         self.age += increment
 
-        if self.age > 4:
-            print(f'warning: {self.species} morreu.')
+        if self.age >= 4:
+            print(f'warning: {self.species} morreu')
             self.age = 4
 
     def makeSound (self):
@@ -28,9 +28,9 @@ class Animal:
 def main():
     animal = Animal('', '')
     while True:
-        print('$', end='')
         line: str = input()
-        args: list[str] = line.split()
+        print(f'${line}', end='\n')
+        args: list[str] = line.split(' ')
 
         if args[0] == 'end':
             break
@@ -41,7 +41,7 @@ def main():
         elif args [0] == 'show':
             print(animal)
         elif args[0] == 'noise':
-            print(animal.makeSound())
+            animal.makeSound()
         elif args[0] == 'grow':
             inc = int(args[1])
             animal.ageBy(inc)

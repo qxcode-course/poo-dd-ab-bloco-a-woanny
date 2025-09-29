@@ -7,8 +7,28 @@
         },
         {
             "label": "2025-09-22_18-09-43",
-            "content": "class Towel:\n    def __init__(self, color: str, size: str):\n        \n        self.color: str = color\n        self.size: str = size # P M G\n        self.wetness: int = 0 # max umidade: P -> 10 M -> 20 G -> 30\n\n    def dry (self, amount: int): #quantidade de umidade recebido\n\n        self.wetness += amount # deveria aumentar a umidade\n        \n        if self.wetness > self.getMaxWetness():\n            print('Toalha encharcada.')\n            self.wetness = self.getMaxWetness()\n\n    def wringOut (self): # torce a toalha\n        self.wetness = 0\n\n    def getMaxWetness(self): # umidade m\u00e1xima por tamanho\n        if self.size == 'P':\n            return 10\n        elif self.size == 'M':\n            return 20\n        elif self.size == 'G':\n            return 30\n        return 0 # pra dizer quando nenhuma das op\u00e7\u00f5es for v\u00e1lida\n\ndef main():\n    toalha = Towel('', '') \n    while True:\n        print('$', end='')\n        line: str = input()\n        args: list[str] = line.split('')\n\n        if args[0] == 'end':\n            break\n        elif args[0] == 'criar':\n            color = args[1]\n            size = args [2]\n            toalha = Towel(color, size)\n        elif args[0] == 'mostrar':\n            print(toalha)\n        elif args[0] == 'enxugar':\n            amount = int(args[1])\n            toalha.dry(amount)\n        elif args[0] == 'seca':\n            print('sim' if toalha.wetness else 'nao') \n        else:\n            print('fail: comando desconhecido.')\nmain()",
+            "content": "@@ -757,34 +757,16 @@\n turn 30%0A\n-        else:%0A    \n         \n",
             "lines": "50"
+        },
+        {
+            "label": "2025-09-29_16-49-21",
+            "content": "@@ -991,17 +991,16 @@\n .split('\n- \n ')%0A%0A    \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-09-29_17-26-03",
+            "content": "@@ -916,25 +916,18 @@\n int(\n-f\n '$\n-%7Bline%7D\n ', end='\n %5Cn')\n@@ -926,10 +926,8 @@\n nd='\n-%5Cn\n ')%0A \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-09-29_17-26-41",
+            "content": "@@ -916,10 +916,17 @@\n int(\n+f\n '$\n+%7Bline%7D\n ', e\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-09-29_17-26-56",
+            "content": "class Towel:\n    def __init__(self, color: str, size: str):\n        \n        self.color: str = color\n        self.size: str = size # P M G\n        self.wetness: int = 0 # max umidade: P -> 10 M -> 20 G -> 30\n\n    def dry (self, amount: int): #quantidade de umidade recebido\n\n        self.wetness += amount # deveria aumentar a umidade\n        \n        if self.wetness > self.getMaxWetness():\n            print('Toalha encharcada.')\n            self.wetness = self.getMaxWetness()\n\n    def wringOut (self): # torce a toalha\n        self.wetness = 0\n\n    def getMaxWetness(self): # umidade m\u00e1xima por tamanho\n        if self.size == 'P':\n            return 10\n        elif self.size == 'M':\n            return 20\n        elif self.size == 'G':\n            return 30\n        else:\n            return 0 # pra dizer quando nenhuma das op\u00e7\u00f5es for v\u00e1lida\n\ndef main():\n    toalha = Towel('', '') \n    while True:\n        print('$', end='\\n')\n        line: str = input()\n        args: list[str] = line.split(' ')\n\n        if args[0] == 'end':\n            break\n        elif args[0] == 'criar':\n            color = args[1]\n            size = args [2]\n            toalha = Towel(color, size)\n        elif args[0] == 'mostrar':\n            print(toalha)\n        elif args[0] == 'enxugar':\n            amount = int(args[1])\n            toalha.dry(amount)\n        elif args[0] == 'seca':\n            print('sim' if toalha.wetness else 'nao') \n        else:\n            print('fail: comando desconhecido.')\nmain()",
+            "lines": "51"
         }
     ]
 }
