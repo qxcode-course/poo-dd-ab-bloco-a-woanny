@@ -13,6 +13,7 @@ expanded:
 tasks:
   animal: '{rate:100, human:monitor, iagen:perguntei_como_certos_comandos_funcionam,
     other:google, alone:6, study:100}'
+  carro: '{alone:3, study:50}'
   enxugar: '{guide:professor, alone:2, study:100}'
 flags:
   quests: 2
@@ -20,4 +21,4 @@ flags:
   tasks: 0
   graph: 1
   xray: 0
-index: enxugar
+index: carro

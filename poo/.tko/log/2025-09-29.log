@@ -114,3 +114,9 @@
 2025-09-29 17:26:58, EXEC, v:1, k:enxugar, mode:FULL, rate:0
 2025-09-29 17:26:59, EXEC, v:1, k:enxugar, mode:FULL, rate:0
 2025-09-29 17:27:13, MOVE, v:1, k:enxugar, mode:BACK
+2025-09-29 17:54:54, MOVE, v:1, k:enxugar, mode:PICK
+2025-09-29 17:54:54, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:51
+2025-09-29 18:28:35, MOVE, v:1, k:enxugar, mode:BACK
+2025-09-29 18:28:59, MOVE, v:1, k:carro, mode:PICK
+2025-09-29 18:29:06, MOVE, v:1, k:carro, mode:BACK
+2025-09-29 18:29:54, SELF, v:1, k:carro, alone:3, study:50

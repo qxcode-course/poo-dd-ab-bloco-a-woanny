@@ -29,8 +29,8 @@ class Towel:
 def main():
     toalha = Towel('', '') 
     while True:
-        print('$', end='\n')
         line: str = input()
+        print(f'${line}', end='\n')
         args: list[str] = line.split(' ')
 
         if args[0] == 'end':
