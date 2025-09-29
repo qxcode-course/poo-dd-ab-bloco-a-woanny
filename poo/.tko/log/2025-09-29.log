@@ -1,0 +1,8 @@
+2025-09-29 02:40:45, MOVE, v:1, k:animal, mode:PICK
+2025-09-29 02:40:47, EXEC, v:1, k:animal, mode:FULL, rate:0, size:47
+2025-09-29 02:40:56, EXEC, v:1, k:animal, mode:FULL, rate:0
+2025-09-29 02:43:06, EXEC, v:1, k:animal, mode:FULL, rate:0, size:47
+2025-09-29 02:43:22, EXEC, v:1, k:animal, mode:FULL, rate:0, size:47
+2025-09-29 02:44:55, EXEC, v:1, k:animal, mode:FULL, rate:0, size:48
+2025-09-29 02:46:28, EXEC, v:1, k:animal, mode:FULL, rate:0, size:52
+2025-09-29 02:46:30, EXEC, v:1, k:animal, mode:FULL, rate:0
