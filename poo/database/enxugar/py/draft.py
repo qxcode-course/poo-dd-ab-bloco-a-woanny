@@ -6,25 +6,28 @@ class Towel:
         self.wetness: int = 0 # max umidade: P -> 10 M -> 20 G -> 30
 
     def dry (self, amount: int): #quantidade de umidade recebido
-
         self.wetness += amount # deveria aumentar a umidade
-        
-        if self.wetness > self.getMaxWetness():
-            print('Toalha encharcada.')
+        if self.wetness >= self.getMaxWetness():
+            print('toalha encharcada')
             self.wetness = self.getMaxWetness()
-
-    def wringOut (self): # torce a toalha
-        self.wetness = 0
 
     def getMaxWetness(self): # umidade máxima por tamanho
         if self.size == 'P':
             return 10
-        elif self.size == 'M':
+        if self.size == 'M':
             return 20
-        elif self.size == 'G':
+        if self.size == 'G':
             return 30
-        else:
-            return 0 # pra dizer quando nenhuma das opções for válida
+        return 0 # pra dizer quando nenhuma das opções for válida
+
+    def wringOut (self): # torce a toalha
+        self.wetness = 0
+
+    def isDry(self) -> bool:
+        return self.wetness == 0
+    
+    def __str__(self):
+        return f'Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}'
 
 def main():
     toalha = Towel('', '') 
@@ -45,7 +48,9 @@ def main():
             amount = int(args[1])
             toalha.dry(amount)
         elif args[0] == 'seca':
-            print('sim' if toalha.wetness else 'nao') 
+            print('sim' if toalha.isDry() else 'nao') 
+        elif args[0] =='torcer':
+            toalha.wringOut()
         else:
             print('fail: comando desconhecido.')
 main()

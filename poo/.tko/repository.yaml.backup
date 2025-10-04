@@ -12,13 +12,17 @@ expanded:
 - bloco_a-práticas-com-o-git
 tasks:
   animal: '{rate:100, human:monitor, iagen:perguntei_como_certos_comandos_funcionam,
+
     other:google, alone:6, study:100}'
-  carro: '{alone:3, study:50}'
-  enxugar: '{guide:professor, alone:2, study:100}'
+  carro: '{rate:100, human:monitor, iagen:gpt_pedi_socorro_pra_ver_oq_eu_tava_errando_e_ele_falhou_misseravelmente_em_me_ajudar,
+
+    alone:7, study:150}'
+  calculadora: '{alone:1, study:5}'
+  enxugar: '{rate:50, guide:professor, alone:2, study:100}'
 flags:
   quests: 2
   tracks: 0
   tasks: 0
   graph: 1
   xray: 0
-index: carro
+index: enxugar
