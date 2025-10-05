@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-04_20-26-17",
+            "content": "@@ -1146,185 +1146,8 @@\n     \n-    inc = int(args%5B1%5D)%0A            calculadora.charge(inc)%0A        elif args%5B0%5D == 'sum':%0A            a = int(args%5B1%5D)%0A            b = int(args%5B2%5D)%0A            calculadora.sum(a, b)\n+elif\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-04_20-30-23",
+            "content": "@@ -38,29 +38,8 @@\n self\n-, batteryMax: int = 0\n ):%0A \n@@ -252,17 +252,17 @@\n def char\n-g\n+c\n e(self, \n@@ -413,18 +413,18 @@\n f useBat\n-t\n e\n+r\n ry(self)\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-10-04_20-32-25",
+            "content": "@@ -726,207 +726,8 @@\n  b%0A%0A\n-    def div(self, a: int, b: int):%0A        if not self.useBattery:%0A            return%0A        if b == 0:%0A            print('fail: divis%C3%A3o por zero')%0A            return%0A        self.display = a // b%0A%0A\n %0Adef\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-10-04_20-36-07",
+            "content": "@@ -1547,193 +1547,4 @@\n , b)\n-%0A        elif args%5B0%5D == 'div':%0A            a = int(args%5B1%5D)%0A            b = int(args%5B2%5D)%0A            calculadora.div(a, b)%0A        else:%0A            print('fail: comando invalido')%0A%0Amain()\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-04_20-37-46",
+            "content": "@@ -1030,9 +1030,9 @@\n t(f'\n-$\n+S\n %7Blin\n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-04_20-38-05",
+            "content": "@@ -119,26 +119,17 @@\n : int = \n-batteryMax\n+0\n %0A       \n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-04_20-39-36",
+            "content": "@@ -788,34 +788,32 @@\n  self.useBattery\n-()\n :%0A            re\n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-04_20-40-14",
+            "content": "@@ -868,17 +868,17 @@\n l: divis\n-a\n+%C3%A3\n o por ze\n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-04_20-40-23",
+            "content": "@@ -84,12 +84,10 @@\n ry: \n-floa\n+in\n t = \n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-04_20-42-49",
+            "content": "@@ -929,16 +929,17 @@\n ay = a /\n+/\n  b%0A%0A%0Adef\n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-04_20-51-32",
+            "content": "@@ -1,1753 +1,56 @@\n-class Calculadora:%0A%0A    def __init__(self, batteryMax: int = 0):%0A        self.battery: float = 0%0A        self.batteryMax: int = batteryMax%0A        self.display: float = 0%0A%0A    def __str__(self) -%3E str:%0A        return(f'display = %7Bself.display:.2f%7D, battery = %7Bself.battery%7D')%0A    %0A    def charge(self, increment: int):%0A        self.battery += increment%0A        if self.battery %3E self.batteryMax:%0A            self.battery = self.batteryMax%0A%0A    def useBattery(self) -%3E bool:%0A        if self.battery == 0:%0A            print('fail: bateria insuficiente')%0A            return False%0A        self.battery -= 1%0A        return True%0A%0A    def sum(self, a: int, b: int):%0A        if not self.useBattery():%0A            return%0A        self.display = a + b%0A%0A    def div(self, a: int, b: int):%0A        if not self.useBattery():%0A            return%0A        if b == 0:%0A            print('fail: divisao por zero')%0A            return%0A        self.display = a / b%0A%0A%0Adef main():%0A    calculadora = Calculadora()%0A    while True:%0A        line: str = input()%0A        print(f'$%7Bline%7D', end='%5Cn')%0A        args: list%5Bstr%5D = line.split(' ')%0A%0A        if args%5B0%5D == 'end':%0A            break%0A        elif args%5B0%5D == 'init':%0A            baterryMax = int(args%5B1%5D)%0A            calculadora = Calculadora(baterryMax)%0A        elif args %5B0%5D == 'show':%0A            print(calculadora)%0A        elif args%5B0%5D == 'charge':%0A            inc = int(args%5B1%5D)%0A            calculadora.charge(inc)%0A        elif args%5B0%5D == 'sum':%0A            a = int(args%5B1%5D)%0A            b = int(args%5B2%5D)%0A            calculadora.sum(a, b)%0A        elif args%5B0%5D == 'div':%0A            a = int(args%5B1%5D)%0A            b = int(args%5B2%5D)%0A            calculadora.div(a, b)%0A        else:%0A            print('fail: comando invalido')%0A%0Amain()\n+@@ -154,20 +154,18 @@%0A isplay: %0A-floa%0A+in%0A t = 0%250A%250A %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-10-05_01-23-08",
+            "content": "class Calculadora:\n\n    def __init__(self, batteryMax: int = 0):\n        self.battery: float = 0\n        self.batteryMax: int = batteryMax\n        self.display: float = 0\n\n    def __str__(self) -> str:\n        return(f'display = {self.display:.2f}, battery = {self.battery}')\n    \n    def charge(self, increment: int):\n        self.battery += increment\n        if self.battery > self.batteryMax:\n            self.battery = self.batteryMax\n\n    def useBattery(self) -> bool:\n        if self.battery == 0:\n            print('fail: bateria insuficiente')\n            return False\n        self.battery -= 1\n        return True\n\n    def sum(self, a: int, b: int):\n        if not self.useBattery():\n            return\n        self.display = a + b\n\n    def div(self, a: int, b: int):\n        if not self.useBattery():\n            return\n        if b == 0:\n            print('fail: divisao por zero')\n            return\n        self.display = a / b\n\n\ndef main():\n    calculadora = Calculadora()\n    while True:\n        line: str = input()\n        print(f'${line}', end='\\n')\n        args: list[str] = line.split(' ')\n\n        if args[0] == 'end':\n            break\n        elif args[0] == 'init':\n            baterryMax = int(args[1])\n            calculadora = Calculadora(baterryMax)\n        elif args [0] == 'show':\n            print(calculadora)\n        elif args[0] == 'charge':\n            inc = int(args[1])\n            calculadora.charge(inc)\n        elif args[0] == 'sum':\n            a = int(args[1])\n            b = int(args[2])\n            calculadora.sum(a, b)\n        elif args[0] == 'div':\n            a = int(args[1])\n            b = int(args[2])\n            calculadora.div(a, b)\n        else:\n            print('fail: comando invalido')\n\nmain()",
+            "lines": "65"
+        }
+    ]
+}
