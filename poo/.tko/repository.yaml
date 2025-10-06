@@ -1,15 +1,21 @@
-remote: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
-lang: py
-filter:
-- BLOCO_A
-- BLOCO_B
-version: 0.0.1
-database: database
+version: '0.2'
+sources:
+- database: database
+  link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+  cache_path: /workspaces/poo-dd-ab-bloco-a-woanny/poo/.tko/cache/database.md
+  cache_timestamp: '2025-10-06 17:15:38'
+  filters:
+  - BLOCO_A
+  - BLOCO_B
+- database: local
+  link: ''
+  cache_path: ''
+  cache_timestamp: ''
+  filters: null
 expanded:
 - campanha-principal
-- bloco_b-primeiras-classes
 - configuracao-e-aquecimento
-- bloco_a-práticas-com-o-git
+- bloco_b-modificadores-de-acesso
 tasks:
   animal: '{rate:100, human:monitor, iagen:perguntei_como_certos_comandos_funcionam,
     other:google, alone:6, study:100}'
@@ -24,4 +30,5 @@ flags:
   tasks: 0
   graph: 1
   xray: 0
-index: calculadora
+lang: py
+selected: chinela
