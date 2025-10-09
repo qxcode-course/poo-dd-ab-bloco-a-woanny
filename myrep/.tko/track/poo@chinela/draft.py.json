@@ -12,7 +12,12 @@
         },
         {
             "label": "2025-10-06_18-24-40",
-            "content": "class Chinela:\n    def __init__(self):\n        self.__tam: int = 0\n\n    def getTamanho(self, value: int):\n        if value % 2 == 0:\n            return self.__tam\n        print('Erro: n\u00e3o exite gente com p\u00e9 desse tamanho.')\n\n    def setTamanho(self, value: int):\n        #talvez um if aqui pra saber se \u00e9 par, ver depois de continua 2 if ou elif\n        if value < 20 or value > 50:\n            print('Erro: n\u00e3o exite gente com p\u00e9 desse tamanho.')\n            return self\n        self.__tam = value\n        return self\n    \nchinela = Chinela()\n\nwhile chinela.getTamanho == 0:\n    print('Digite o tamanho da sua chinela')\n    tamanho = int(input())\n    chinela.setTamanho(tamanho)\n\nprint('Parab\u00e9ns, voc\u00ea comprou uma chinela tamanho ', chinela.getTamanho())",
+            "content": "@@ -107,33 +107,125 @@\n         \n-return self.__tam\n+if value %25 2 == 0:%0A            return self.__tam%0A        print('Erro: n%C3%A3o exite gente com p%C3%A9 desse tamanho.')\n %0A%0A    de\n@@ -343,65 +343,8 @@\n lif%0A\n-        if value %25 2 == 0:%0A            return self.__tam%0A\n     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-09_23-04-27",
+            "content": "class Chinela:\n    def __init__(self):\n        self.__tam: int = 0\n\n    def getTamanho(self, value: int):\n        return self.__tam\n\n    def setTamanho(self, value: int):\n        #talvez um if aqui pra saber se \u00e9 par, ver depois de continua 2 if ou elif\n        if value % 2 == 0:\n            return self.__tam\n        if value < 20 or value > 50:\n            print('Erro: n\u00e3o exite gente com p\u00e9 desse tamanho.')\n            return self\n        self.__tam = value\n        return self\n    \nchinela = Chinela()\n\nwhile chinela.getTamanho == 0:\n    print('Digite o tamanho da sua chinela')\n    tamanho = int(input())\n    chinela.setTamanho(tamanho)\n\nprint('Parab\u00e9ns, voc\u00ea comprou uma chinela tamanho ', chinela.getTamanho())",
             "lines": "25"
         }
     ]
