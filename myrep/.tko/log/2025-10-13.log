@@ -1,0 +1,8 @@
+2025-10-13 00:07:49, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-13 00:07:50, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:23
+2025-10-13 00:11:07, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:23
+2025-10-13 00:11:21, EXEC, v:1, k:poo@chinela, mode:FREE
+2025-10-13 00:12:13, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-13 00:14:15, SELF, v:1, k:poo@chinela, rate:100, iagen:eu_tava_errando_umas_besteiras_e_pedi_ajuda_pro_gpt, other:vi_uns_tutoriais_de_python, alone:9, study:100
+2025-10-13 00:14:43, SELF, v:1, k:poo@chinela, rate:100, iagen:eu_tava_errando_umas_besteiras_e_pedi_ajuda_pro_gpt, other:vi_uns_tutoriais_de_python, alone:8, study:100
+2025-10-13 00:14:48, MOVE, v:1, k:poo@camisa, mode:DOWN

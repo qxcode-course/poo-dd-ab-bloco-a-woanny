@@ -17,8 +17,18 @@
         },
         {
             "label": "2025-10-09_23-04-27",
-            "content": "class Chinela:\n    def __init__(self):\n        self.__tam: int = 0\n\n    def getTamanho(self, value: int):\n        return self.__tam\n\n    def setTamanho(self, value: int):\n        #talvez um if aqui pra saber se \u00e9 par, ver depois de continua 2 if ou elif\n        if value % 2 == 0:\n            return self.__tam\n        if value < 20 or value > 50:\n            print('Erro: n\u00e3o exite gente com p\u00e9 desse tamanho.')\n            return self\n        self.__tam = value\n        return self\n    \nchinela = Chinela()\n\nwhile chinela.getTamanho == 0:\n    print('Digite o tamanho da sua chinela')\n    tamanho = int(input())\n    chinela.setTamanho(tamanho)\n\nprint('Parab\u00e9ns, voc\u00ea comprou uma chinela tamanho ', chinela.getTamanho())",
+            "content": "@@ -80,24 +80,36 @@\n Tamanho(self\n+, value: int\n ):%0A        r\n@@ -176,53 +176,174 @@\n     \n-if value %3C 20 or value %3E 50 and\n+#talvez um if aqui pra saber se %C3%A9 par, ver depois de continua 2 if ou elif%0A        if value %25 2 == 0:%0A            return self.__tam%0A        if\n  value \n-%25 2 != \n+%3C 20 or value %3E 5\n 0:%0A \n@@ -465,25 +465,29 @@\n     \n-%0Adef main():\n+    return self\n %0A    \n+%0A\n chin\n@@ -503,20 +503,16 @@\n nela()%0A%0A\n-    \n while ch\n@@ -531,21 +531,15 @@\n anho\n-()\n  == 0:%0A\n-    \n     \n@@ -587,35 +587,31 @@\n     \n-    resposta = \n+tamanho = int(\n input()\n+)\n %0A\n-    \n     \n@@ -633,23 +633,18 @@\n nho(\n-resposta)%0A%0A    \n+tamanho)%0A%0A\n prin\n@@ -688,16 +688,17 @@\n  tamanho\n+ \n ', chine\n@@ -717,11 +717,4 @@\n o())\n-%0Amain()\n",
             "lines": "25"
+        },
+        {
+            "label": "2025-10-13_00-07-50",
+            "content": "@@ -173,15 +173,11 @@\n lue \n-%25\n+%3C\n  2\n- != \n 0 or\n@@ -187,25 +187,30 @@\n lue \n-%3C 20 or value %3E 5\n+%3E 50 and value %25 2 != \n 0:%0A \n@@ -240,17 +240,16 @@\n  n%C3%A3o exi\n-s\n te gente\n@@ -291,16 +291,21 @@\n   return\n+ self\n %0A       \n@@ -475,20 +475,15 @@\n a = \n-int(\n input()\n-)\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-13_00-11-07",
+            "content": "class Chinela:\n    def __init__(self):\n        self.__tam: int = 0\n\n    def getTamanho(self):\n        return self.__tam\n\n    def setTamanho(self, value: int):\n        if value % 2 != 0 or value < 20 or value > 50:\n            print('Erro: n\u00e3o existe gente com p\u00e9 desse tamanho.')\n            return\n        self.__tam = value\n    \ndef main():\n    chinela = Chinela()\n\n    while chinela.getTamanho() == 0:\n        print('Digite o tamanho da sua chinela')\n        resposta = int(input())\n        chinela.setTamanho(resposta)\n\n    print('Parab\u00e9ns, voc\u00ea comprou uma chinela tamanho', chinela.getTamanho())\nmain()",
+            "lines": "23"
         }
     ]
 }
