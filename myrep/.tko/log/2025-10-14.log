@@ -1,0 +1,12 @@
+2025-10-14 16:18:29, SELF, v:1, k:poo@chinela
+2025-10-14 16:20:05, SELF, v:1, k:poo@camisa
+2025-10-14 16:20:46, SELF, v:1, k:poo@chinela
+2025-10-14 16:20:51, SELF, v:1, k:poo@camisa
+2025-10-14 17:14:43, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-14 17:14:46, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0, size:26
+2025-10-14 17:14:47, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0
+2025-10-14 17:14:55, EXEC, v:1, k:poo@camisa, mode:FREE
+2025-10-14 17:15:21, EXEC, v:1, k:poo@camisa, mode:FREE, size:26
+2025-10-14 17:15:49, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-14 17:17:33, SELF, v:1, k:poo@camisa, rate:100, iagen:eu_tava_errando_mais_besteiras_e_mandei_o_gpt_achar_onde_eu_tava_errando, alone:9, study:60
+2025-10-14 17:20:04, SELF, v:1, k:poo@camisa, rate:100, iagen:eu_empaquei_um_tempinho_pq_tinha_errado_uma_besteira_ento_pedi_pro_gpt_achar_o_erro_pra_mim, alone:9, study:60

@@ -3,7 +3,7 @@ sources:
 - database: database
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: /workspaces/poo-dd-ab-bloco-a-woanny/poo/.tko/cache/database.md
-  cache_timestamp: '2025-10-06 17:15:38'
+  cache_timestamp: '2025-10-14 16:19:23'
   filters:
   - BLOCO_A
   - BLOCO_B

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-14_17-14-46",
+            "content": "@@ -662,16 +662,17 @@\n  tamanho\n+ \n ', camis\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-14_17-15-21",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho: str = ''\n\n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, valor: str): #apenas aceita os valores v\u00e1lidos de tamanho\n        tamanhos = ['PP', 'P', 'M', 'G', 'GG', 'XG']\n\n        if valor in tamanhos:\n            self.__tamanho = valor\n        else:\n            print(\"N\u00e3o tem camisa desse tamanho! Os tamanhos s\u00e3o: PP, P, M, G, GG, XG.\")\n\ndef main():\n    camisa = Camisa()\n\n    while camisa.getTamanho() == '':\n        print('Informe seu tamanho de camisa.')\n        tamanho = input()\n        camisa.setTamanho(tamanho)\n\n    print('Parab\u00e9ns, voc\u00ea comprou uma camisa tamanho', camisa.getTamanho())\n\nmain()",
+            "lines": "26"
+        }
+    ]
+}
