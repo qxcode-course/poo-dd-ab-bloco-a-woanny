@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-15_10-12-06",
+            "content": "@@ -1,948 +0,0 @@\n-class Roupa:%0A    def __init__(self):%0A        self.__tamanho: str = ''%0A%0A    def getTamanho(self):%0A        return self.__tamanho%0A%0A    def setTamanho(self, valor: str): #apenas aceita os valores v%C3%A1lidos de tamanho%0A        tamanhos = %5B'PP', 'P', 'M', 'G', 'GG', 'XG'%5D%0A%0A        if valor in tamanhos:%0A            self.__tamanho = valor%0A        else:%0A            print('fail: Valor inv%C3%A1lido, tente PP, P, M, G, GG ou XG')%0A%0A    def __str__(self):%0A        if self.__tamanho == '':%0A            return 'size: ()'%0A        else:%0A            return f'size: (%7Bself.__tamanho%7D)'%0A%0Adef main():%0A    roupa = Roupa()%0A%0A    while roupa.getTamanho() == '':%0A%0A        line: str = input()%0A        print(f'$%7Bline%7D', end='%5Cn')%0A        args: list%5Bstr%5D = line.split(' ')%0A%0A        if args%5B0%5D == 'end':%0A            break%0A        elif args%5B0%5D == 'show':%0A            print(roupa)%0A        elif args%5B0%5D == 'size':%0A            valor = args%5B1%5D%0A            roupa.setTamanho(valor)%0A%0Amain()\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-15_11-21-08",
+            "content": "@@ -604,12 +604,32 @@\n ile \n-True\n+roupa.getTamanho() == ''\n :%0A%0A \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-15_11-23-18",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanho: str = ''\n\n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, valor: str): #apenas aceita os valores v\u00e1lidos de tamanho\n        tamanhos = ['PP', 'P', 'M', 'G', 'GG', 'XG']\n\n        if valor in tamanhos:\n            self.__tamanho = valor\n        else:\n            print('fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG')\n\n    def __str__(self):\n        if self.__tamanho == '':\n            return 'size: ()'\n        else:\n            return f'size: ({self.__tamanho})'\n\ndef main():\n    roupa = Roupa()\n\n    while True:\n\n        line: str = input()\n        print(f'${line}', end='\\n')\n        args: list[str] = line.split(' ')\n\n        if args[0] == 'end':\n            break\n        elif args[0] == 'show':\n            print(roupa)\n        elif args[0] == 'size':\n            valor = args[1]\n            roupa.setTamanho(valor)\n\nmain()",
+            "lines": "39"
+        }
+    ]
+}

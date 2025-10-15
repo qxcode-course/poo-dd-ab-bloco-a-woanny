@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: /workspaces/poo-dd-ab-bloco-a-woanny/myrep/.tko/cache/poo.md
-  cache_timestamp: '2025-10-14 17:18:29'
+  cache_timestamp: '2025-10-15 10:11:34'
   filters:
   - a
 expanded:
@@ -17,6 +17,8 @@ expanded:
 tasks:
   poo@camisa: '{rate:100, iagen:eu_empaquei_um_tempinho_pq_tinha_errado_uma_besteira_ento_pedi_pro_gpt_achar_o_erro_pra_mim,
     alone:9, study:60}'
+  poo@roupa: '{rate:100, iagen:o_de_sempre_pedi_ajuda_pra_encontrar_meus_erros, alone:9,
+    study:30}'
 flags:
   quests: 0
   tracks: 0
@@ -24,4 +26,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@camisa
+selected: poo@relogio
